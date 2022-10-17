@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-10-17T15:39:23.749Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="1Ur0FRcxdpT62PFeIEmS" version="20.4.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-17T15:40:31.671Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="q6mBAOwcaCTxPoqCljKz" version="20.4.1" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1185" dy="638" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -142,7 +142,7 @@
         <mxCell id="j_ADVmi_IgaEcjlXgKrq-61" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="j_ADVmi_IgaEcjlXgKrq-57" target="j_ADVmi_IgaEcjlXgKrq-60">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="j_ADVmi_IgaEcjlXgKrq-57" value="What is your DNI / NIE ?&lt;br&gt;&lt;br&gt;What is your first&amp;nbsp; name ?&lt;br&gt;&lt;br&gt;What is your last&amp;nbsp; name ?&lt;br&gt;&lt;br&gt;What is your study field&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;SF1 or SF2 ?&lt;br&gt;&lt;br&gt;&lt;/span&gt;What is your assignments&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;A + a number ?&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="j_ADVmi_IgaEcjlXgKrq-57" value="What is your DNI / NIE ?&lt;br&gt;&lt;br&gt;What is your first&amp;nbsp; name ?&lt;br&gt;&lt;br&gt;What is your last&amp;nbsp; name ?&lt;br&gt;&lt;br&gt;What is your study field&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;SF1 or SF2 ?&lt;br&gt;&lt;br&gt;&lt;/span&gt;What is your assignments&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;A + a number ? (minimum 17 credits&amp;nbsp;)&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="630" y="480" width="170" height="170" as="geometry" />
         </mxCell>
         <mxCell id="j_ADVmi_IgaEcjlXgKrq-71" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="j_ADVmi_IgaEcjlXgKrq-60" target="j_ADVmi_IgaEcjlXgKrq-70">
@@ -151,7 +151,7 @@
         <mxCell id="j_ADVmi_IgaEcjlXgKrq-60" value="Wait&amp;nbsp; a teacher to approve" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="655" y="785" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="j_ADVmi_IgaEcjlXgKrq-62" value="Can see your number of credits" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="j_ADVmi_IgaEcjlXgKrq-62" value="Can see your information and your credit number" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="325" y="1450" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="j_ADVmi_IgaEcjlXgKrq-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="j_ADVmi_IgaEcjlXgKrq-64" target="j_ADVmi_IgaEcjlXgKrq-34">
