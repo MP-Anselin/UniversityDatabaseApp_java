@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-10-17T15:35:18.712Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="Tc2-Yd3b2ZidDkOP2Gj6" version="20.4.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-17T15:37:40.592Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="IhVdMsXBnkfFpwPKVxDI" version="20.4.1" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="474" dy="255" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1185" dy="638" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -50,13 +50,8 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="j_ADVmi_IgaEcjlXgKrq-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="j_ADVmi_IgaEcjlXgKrq-30" target="j_ADVmi_IgaEcjlXgKrq-34">
+        <mxCell id="j_ADVmi_IgaEcjlXgKrq-65" value="YES" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="j_ADVmi_IgaEcjlXgKrq-30" target="j_ADVmi_IgaEcjlXgKrq-64">
           <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="j_ADVmi_IgaEcjlXgKrq-36" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="j_ADVmi_IgaEcjlXgKrq-35">
-          <mxGeometry x="0.2632" y="2" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="j_ADVmi_IgaEcjlXgKrq-30" value="Is first name&amp;nbsp; and last name correct ?" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="306.5" y="750" width="140" height="110" as="geometry" />
@@ -69,7 +64,7 @@
         </mxCell>
         <mxCell id="j_ADVmi_IgaEcjlXgKrq-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="j_ADVmi_IgaEcjlXgKrq-34">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="206.5" y="1010" as="targetPoint" />
+            <mxPoint x="210" y="1280" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="j_ADVmi_IgaEcjlXgKrq-40" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="j_ADVmi_IgaEcjlXgKrq-39">
@@ -84,13 +79,13 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="j_ADVmi_IgaEcjlXgKrq-34" value="Does your apply has been approve ?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="306.5" y="950" width="150" height="120" as="geometry" />
+          <mxGeometry x="310" y="1220" width="150" height="120" as="geometry" />
         </mxCell>
         <mxCell id="j_ADVmi_IgaEcjlXgKrq-38" value="Please wait for a teacher&#39;s approval" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="86.5" y="980" width="120" height="60" as="geometry" />
+          <mxGeometry x="90" y="1250" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="j_ADVmi_IgaEcjlXgKrq-41" value="Your apply has been reject" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="551.5" y="980" width="120" height="60" as="geometry" />
+          <mxGeometry x="555" y="1250" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="j_ADVmi_IgaEcjlXgKrq-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="j_ADVmi_IgaEcjlXgKrq-44" target="j_ADVmi_IgaEcjlXgKrq-25">
           <mxGeometry relative="1" as="geometry" />
@@ -151,7 +146,28 @@
           <mxGeometry x="655" y="785" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="j_ADVmi_IgaEcjlXgKrq-62" value="Can see your number of credits" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="321.5" y="1180" width="120" height="60" as="geometry" />
+          <mxGeometry x="325" y="1450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="j_ADVmi_IgaEcjlXgKrq-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="j_ADVmi_IgaEcjlXgKrq-64" target="j_ADVmi_IgaEcjlXgKrq-34">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="1160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="j_ADVmi_IgaEcjlXgKrq-67" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="j_ADVmi_IgaEcjlXgKrq-66">
+          <mxGeometry x="-0.3442" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="j_ADVmi_IgaEcjlXgKrq-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="j_ADVmi_IgaEcjlXgKrq-64" target="j_ADVmi_IgaEcjlXgKrq-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="j_ADVmi_IgaEcjlXgKrq-69" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="j_ADVmi_IgaEcjlXgKrq-68">
+          <mxGeometry x="0.268" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="j_ADVmi_IgaEcjlXgKrq-64" value="Did you apply for the assignements ?" style="rhombus;whiteSpace=wrap;html=1;shadow=0;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="336.5" y="955" width="133.5" height="145" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
