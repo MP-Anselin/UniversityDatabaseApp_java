@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-10-17T15:41:09.179Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="w1TVwRAfW4t-P8CQ2Ij7" version="20.4.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-17T15:44:00.816Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="aei6hqAkI12emGcfprQZ" version="20.4.1" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1422" dy="766" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -126,6 +126,12 @@
         <mxCell id="MGEJf-2uWyYtRfOnBQI6-76" value="Can approve or reject student registration" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="510" y="1109" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="MGEJf-2uWyYtRfOnBQI6-95" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="MGEJf-2uWyYtRfOnBQI6-77" target="MGEJf-2uWyYtRfOnBQI6-94">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MGEJf-2uWyYtRfOnBQI6-97" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="MGEJf-2uWyYtRfOnBQI6-77" target="MGEJf-2uWyYtRfOnBQI6-96">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="MGEJf-2uWyYtRfOnBQI6-77" value="Can create student profile" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="680" y="1109" width="120" height="60" as="geometry" />
         </mxCell>
@@ -140,6 +146,12 @@
         </mxCell>
         <mxCell id="MGEJf-2uWyYtRfOnBQI6-87" value="connected" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="470" y="990" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="MGEJf-2uWyYtRfOnBQI6-94" value="Add student manually:&lt;br&gt;&lt;br&gt;DNI / NIE ? :&lt;br&gt;Firs Name ? :&lt;br&gt;Last Name ? :&lt;br&gt;Birthday ? :" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="680" y="1249" width="150" height="121" as="geometry" />
+        </mxCell>
+        <mxCell id="MGEJf-2uWyYtRfOnBQI6-96" value="add student by csv file" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="880" y="1109" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
