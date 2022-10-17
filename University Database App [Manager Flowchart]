@@ -1,9 +1,12 @@
-<mxfile host="app.diagrams.net" modified="2022-10-17T15:00:57.969Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="KMY25_TM1EIwFQnWUZE6" version="20.4.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-17T15:07:19.595Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="_DC_xkkrlJAeXw7XsdHi" version="20.4.1" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1422" dy="766" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="89pED8gfutab7QAyOxUJ-0" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="XV3-hIO4mwN09GYhvIGn-0" target="A8xn0sebMe8TNcp436N--0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="XV3-hIO4mwN09GYhvIGn-0" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="325" y="70" width="30" height="60" as="geometry" />
         </mxCell>
@@ -71,21 +74,21 @@
         <mxCell id="XV3-hIO4mwN09GYhvIGn-19" value="&lt;font color=&quot;#000000&quot;&gt;Edit the assignment&amp;nbsp;credit&amp;nbsp;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FF3333;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="240" y="910" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="A8xn0sebMe8TNcp436N--2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="A8xn0sebMe8TNcp436N--0" target="XV3-hIO4mwN09GYhvIGn-3">
+        <mxCell id="A8xn0sebMe8TNcp436N--2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="A8xn0sebMe8TNcp436N--0" target="XV3-hIO4mwN09GYhvIGn-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="A8xn0sebMe8TNcp436N--3" value="Login" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="A8xn0sebMe8TNcp436N--2">
+        <mxCell id="A8xn0sebMe8TNcp436N--3" value="Login" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="A8xn0sebMe8TNcp436N--2" vertex="1" connectable="0">
           <mxGeometry x="0.26" y="4" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="A8xn0sebMe8TNcp436N--5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="A8xn0sebMe8TNcp436N--0" target="A8xn0sebMe8TNcp436N--4">
+        <mxCell id="A8xn0sebMe8TNcp436N--5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="A8xn0sebMe8TNcp436N--0" target="A8xn0sebMe8TNcp436N--4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="A8xn0sebMe8TNcp436N--0" value="Login or Register" style="rhombus;whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="A8xn0sebMe8TNcp436N--0" value="Login or Register" style="rhombus;whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="300" y="220" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="A8xn0sebMe8TNcp436N--4" value="Ask Admin to create a user for you" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="A8xn0sebMe8TNcp436N--4" value="Ask Admin to create a user for you" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="440" y="230" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
