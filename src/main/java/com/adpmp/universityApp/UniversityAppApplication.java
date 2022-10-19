@@ -1,7 +1,8 @@
 package com.adpmp.universityApp;
 
+import com.adpmp.universityApp.microservices.authentication.server.AuthenticationServer;
 import com.adpmp.universityApp.microservices.managers.server.ManagersServer;
-import com.adpmp.universityApp.microservices.registration.server.RegistrationServer;
+import com.adpmp.universityApp.microservices.university.server.UniversityServer;
 import com.adpmp.universityApp.microservices.students.server.StudentsServer;
 import com.adpmp.universityApp.microservices.teachers.server.TeachersServer;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -17,7 +18,7 @@ public class UniversityAppApplication {
         String serverName = NO_VALUE;
         String port = null;
 
-        System.setProperty(RegistrationServer.REGISTRATION_SERVER_HOSTNAME, "localhost");
+        System.setProperty(AuthenticationServer.AUTHENTICATION_SERVER_HOSTNAME, "localhost");
 
         for (String arg : args) {
             if (arg.startsWith("--"))
@@ -49,9 +50,13 @@ public class UniversityAppApplication {
         }
 
         switch (serverName) {
-            case "registration":
-                System.out.println("start registration");
-                RegistrationServer.main(args);
+            case "authentication":
+                System.out.println("start authentication");
+                UniversityServer.main(args);
+                break;
+            case "university":
+                System.out.println("start university");
+                UniversityServer.main(args);
                 break;
             case "manager":
                 System.out.println("start manager");

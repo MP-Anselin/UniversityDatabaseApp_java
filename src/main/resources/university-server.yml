@@ -4,13 +4,10 @@ spring:
      name: teachers-service
   freemarker:
     enabled: false
-  thymeleaf:
-    cache: false
-    prefix: classpath:/teachers-server/templates/
 
 error.path: /error
 
-server.port: 4444
+server.port: 2222
 
 eureka:
   client:

@@ -10,12 +10,12 @@ spring:
 
 error.path: /error
 
-server.port: 2222
+server.port: 3333
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://${registration.server.hostname}:1111/eureka/
+      defaultZone: http://${authentication.server.hostname}:1111/eureka/
   instance:
     leaseRenewalIntervalInSeconds: 10
 management.endpoints.web.exposure.include: '*'

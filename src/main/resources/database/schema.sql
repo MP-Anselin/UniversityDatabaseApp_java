@@ -18,6 +18,7 @@ create table accounts
     user_role_id integer     not null,
     first_name   varchar(50) not null,
     last_name    varchar(50) not null,
+    is_log        boolean default false,
     constraint fk_account_user_role_id foreign key (user_role_id) references user_roles
 );
 
