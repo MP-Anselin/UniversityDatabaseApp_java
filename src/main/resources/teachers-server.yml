@@ -1,12 +1,9 @@
 # Spring properties
 spring:
   application:
-     name: teachers-service
+    name: teachers-service
   freemarker:
     enabled: false
-  thymeleaf:
-    cache: false
-    prefix: classpath:/teachers-server/templates/
 
 error.path: /error
 
@@ -15,7 +12,7 @@ server.port: 4444
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://${authentication.server.hostname}:1111/eureka/
+      defaultZone: http://${registration.server.hostname}:1111/eureka/
   instance:
     leaseRenewalIntervalInSeconds: 10
 management.endpoints.web.exposure.include: '*'

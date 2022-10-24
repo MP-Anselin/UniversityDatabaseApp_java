@@ -1,4 +1,4 @@
-package com.adpmp.universityApp.microservices.authentication.model;
+package com.adpmp.universityApp.microservices.university.components.model;
 
 import javax.persistence.*;
 import java.io.Serializable;

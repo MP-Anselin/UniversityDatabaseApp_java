@@ -1,9 +1,8 @@
-package com.adpmp.universityApp.microservices.university.server;
+package com.adpmp.universityApp.microservices.university;
 
-import com.adpmp.universityApp.microservices.authentication.controller.AuthenticationController;
-import com.adpmp.universityApp.microservices.authentication.service.AuthenticationService;
-import com.adpmp.universityApp.microservices.university.controller.UniversityController;
-import com.adpmp.universityApp.microservices.university.service.UniversityService;
+import com.adpmp.universityApp.microservices.registration.RegistrationServer;
+import com.adpmp.universityApp.microservices.university.components.controller.UniversityController;
+import com.adpmp.universityApp.microservices.university.components.service.UniversityService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
@@ -17,17 +16,19 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication(exclude = { HibernateJpaAutoConfiguration.class, //
         DataSourceAutoConfiguration.class })
 @EnableEurekaServer
-@ComponentScan(useDefaultFilters = false) // Disable component scanner
+@ComponentScan(useDefaultFilters = false)
 public class UniversityServer {
 
-    public static final String ACCOUNTS_SERVICE_URL = "http://UNIVERSITY-SERVICE";
+    public static final String AUTHENTICATION_SERVICE_URL = "http://AUTHENTICATION-SERVICE";
 
     public static void main(String[] args) {
-        System.setProperty("spring.config.name", "university-server");
 
+        if (System.getProperty(RegistrationServer.REGISTRATION_SERVER_HOSTNAME) == null)
+            System.setProperty(RegistrationServer.REGISTRATION_SERVER_HOSTNAME, "localhost");
+
+        System.setProperty("spring.config.name", "university-server");
         SpringApplication.run(UniversityServer.class, args);
     }
-
     @LoadBalanced
     @Bean
     RestTemplate restTemplate() {
@@ -40,6 +41,6 @@ public class UniversityServer {
     }
     @Bean
     public UniversityService authenticationService() {
-        return new UniversityService(ACCOUNTS_SERVICE_URL);
+        return new UniversityService(AUTHENTICATION_SERVICE_URL);
     }
 }

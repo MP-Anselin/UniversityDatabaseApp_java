@@ -1,0 +1,6 @@
+#FileLock
+#Mon Oct 24 11:28:47 CEST 2022
+server=192.168.1.134\:45053
+hostName=MPC-fixfedora36
+method=file
+id=1840952bba9c9d9b3dd486f0b2a2704c553fece3bfa

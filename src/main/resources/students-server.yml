@@ -1,21 +1,18 @@
 # Spring properties
 spring:
   application:
-     name: students-service
+    name: students-service
   freemarker:
     enabled: false
-  thymeleaf:
-    cache: false
-    prefix: classpath:/students-server/templates/
 
 error.path: /error
 
-server.port: 5552
+server.port: 5555
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://${authentication.server.hostname}:1111/eureka/
+      defaultZone: http://${registration.server.hostname}:1111/eureka/
   instance:
     leaseRenewalIntervalInSeconds: 10
 management.endpoints.web.exposure.include: '*'
