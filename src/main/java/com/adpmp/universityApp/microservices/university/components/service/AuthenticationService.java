@@ -11,21 +11,13 @@ import java.util.Arrays;
 import java.util.List;
 
 @Service
-public class UniversityService {
-    @Autowired
-    @LoadBalanced
-    protected RestTemplate restTemplate;
-    protected String serviceUrl;
-
-    public UniversityService(String serviceUrl) {
-        this.serviceUrl = serviceUrl.startsWith("http") ? serviceUrl : "http://" + serviceUrl;
+public class AuthenticationService extends UniversityService{
+    public AuthenticationService(String serviceUrl) {
+        super(serviceUrl);
     }
 
-    public UniversityService() {
+    public AuthenticationService() {
     }
-
-    // --------------------------------------- ACCOUNTS -------------------------------------------
-
 
     public Authentication registration(RegistrationDto credentials) {
         try {

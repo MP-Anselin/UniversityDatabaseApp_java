@@ -29,7 +29,7 @@ public class AuthenticationController {
     @PostMapping("/signup")
     public ResponseEntity<Accounts> registration(@RequestBody RegistrationDto credentials){
         Accounts response = this.authenticationService.registration(credentials);
-        return new ResponseEntity<>(response, HttpStatus.ACCEPTED);
+        return new ResponseEntity<>(response, HttpStatus.CREATED);
     }
 
     @PostMapping("/logout/{id}")

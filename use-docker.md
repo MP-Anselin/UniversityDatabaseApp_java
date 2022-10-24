@@ -71,14 +71,14 @@ We will run the container three times, each time running the Java application in
 
 1. Return to the Eureka Dashboard in your browser and refresh the screen.  You should see that `AUTHENTICATION-SERVICE` is now registered.
 
-1. _In a new CMD/Terminal window_, run a third container for the administrator web-service. This is a web-application for viewing administrators information by requesting administrator data from the administrators and authentication microservice.
+1. _In a new CMD/Terminal window_, run a third container for the director web-service. This is a web-application for viewing director information by requesting director data from the director and authentication microservice.
 
     ```sh
-    docker run --name administrator --hostname administrator --network university-net -p 3333:3333 university/microservices java -jar app.jar administrator --registration.server.hostname=<eg server ip addr>
+    docker run --name director --hostname director --network university-net -p 3333:3333 university/microservices java -jar app.jar director --registration.server.hostname=<eg server ip addr>
     ```
 
    Replace `<eg server ip addr>` with the IP address you determined earlier.
-1. _In a new CMD/Terminal window_, run a third container for the teacher web-service. This is a web-application for viewing administrators information by requesting teachers data from the teacher and authentication microservice.
+1. _In a new CMD/Terminal window_, run a third container for the teacher web-service. This is a web-application for viewing director information by requesting teachers data from the teacher and authentication microservice.
 
     ```sh
     docker run --name teacher --hostname teacher --network university-net -p 4444:4444 university/microservices java -jar app.jar teacher --registration.server.hostname=<eg server ip addr>
@@ -100,6 +100,6 @@ We will run the container three times, each time running the Java application in
 
    Replace `<eg server ip addr>` with the IP address you determined earlier.
 
-1. Return to the Eureka Dashboard in your browser and refresh the screen.  You should see that `ADMINISTRATOR-SERVICE`, `TEACHER-SERVICE`, `STUDENTS-SERVICE` and `UNIVERSITY-SERVICE` are now registered.
+1. Return to the Eureka Dashboard in your browser and refresh the screen.  You should see that `DIRECTOR-SERVICE`, `TEACHER-SERVICE`, `STUDENTS-SERVICE` and `UNIVERSITY-SERVICE` are now registered.
 
 1. In a second browser tab, go to http://localhost:6666.  This is the web interface you just deployed and you should be able to view, list and search for account information.

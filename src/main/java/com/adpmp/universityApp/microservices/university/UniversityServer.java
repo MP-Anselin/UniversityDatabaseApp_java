@@ -2,6 +2,8 @@ package com.adpmp.universityApp.microservices.university;
 
 import com.adpmp.universityApp.microservices.registration.RegistrationServer;
 import com.adpmp.universityApp.microservices.university.components.controller.UniversityController;
+import com.adpmp.universityApp.microservices.university.components.service.AssignmentService;
+import com.adpmp.universityApp.microservices.university.components.service.AuthenticationService;
 import com.adpmp.universityApp.microservices.university.components.service.UniversityService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -20,6 +22,7 @@ import org.springframework.web.client.RestTemplate;
 public class UniversityServer {
 
     public static final String AUTHENTICATION_SERVICE_URL = "http://AUTHENTICATION-SERVICE";
+    public static final String DIRECTOR_SERVICE_URL = "http://DIRECTOR-SERVICE";
 
     public static void main(String[] args) {
 
@@ -37,10 +40,15 @@ public class UniversityServer {
 
     @Bean
     public UniversityController authenticationController() {
-        return new UniversityController(authenticationService());
+        return new UniversityController(authenticationService(), assignmentService());
     }
     @Bean
-    public UniversityService authenticationService() {
-        return new UniversityService(AUTHENTICATION_SERVICE_URL);
+    public AuthenticationService authenticationService() {
+        return new AuthenticationService(AUTHENTICATION_SERVICE_URL);
+    }
+
+    @Bean
+    public AssignmentService assignmentService() {
+        return new AssignmentService(DIRECTOR_SERVICE_URL);
     }
 }
