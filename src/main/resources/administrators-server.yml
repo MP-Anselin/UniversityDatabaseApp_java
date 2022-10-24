@@ -1,7 +1,7 @@
 # Spring properties
 spring:
   application:
-    name: managers-service
+    name: administrators-service
   freemarker:
     enabled: false
 

@@ -1,7 +1,7 @@
 package com.adpmp.universityApp;
 
 import com.adpmp.universityApp.microservices.authentication.AuthenticationServer;
-import com.adpmp.universityApp.microservices.managers.server.ManagersServer;
+import com.adpmp.universityApp.microservices.administrators.server.AdministratorsServer;
 import com.adpmp.universityApp.microservices.registration.RegistrationServer;
 import com.adpmp.universityApp.microservices.university.UniversityServer;
 import com.adpmp.universityApp.microservices.students.server.StudentsServer;
@@ -65,7 +65,7 @@ public class UniversityAppApplication {
                 break;
             case "manager":
                 System.out.println("start manager");
-                ManagersServer.main(args);
+                AdministratorsServer.main(args);
                 break;
             case "teacher":
                 System.out.println("start teacher");
