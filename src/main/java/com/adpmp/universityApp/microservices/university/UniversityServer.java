@@ -4,7 +4,7 @@ import com.adpmp.universityApp.microservices.registration.RegistrationServer;
 import com.adpmp.universityApp.microservices.university.components.controller.UniversityController;
 import com.adpmp.universityApp.microservices.university.components.service.AssignmentService;
 import com.adpmp.universityApp.microservices.university.components.service.AuthenticationService;
-import com.adpmp.universityApp.microservices.university.components.service.UniversityService;
+import com.adpmp.universityApp.microservices.university.components.service.ProfilesService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
@@ -24,6 +24,8 @@ public class UniversityServer {
     public static final String AUTHENTICATION_SERVICE_URL = "http://AUTHENTICATION-SERVICE";
     public static final String DIRECTOR_SERVICE_URL = "http://DIRECTOR-SERVICE";
 
+    public static final String PROFILE_SERVICE_URL = "http://PROFILE-SERVICE";
+
     public static void main(String[] args) {
 
         if (System.getProperty(RegistrationServer.REGISTRATION_SERVER_HOSTNAME) == null)
@@ -40,7 +42,7 @@ public class UniversityServer {
 
     @Bean
     public UniversityController authenticationController() {
-        return new UniversityController(authenticationService(), assignmentService());
+        return new UniversityController(authenticationService(), assignmentService(), profileService());
     }
     @Bean
     public AuthenticationService authenticationService() {
@@ -50,5 +52,10 @@ public class UniversityServer {
     @Bean
     public AssignmentService assignmentService() {
         return new AssignmentService(DIRECTOR_SERVICE_URL);
+    }
+
+    @Bean
+    public ProfilesService profileService() {
+        return new ProfilesService(PROFILE_SERVICE_URL);
     }
 }

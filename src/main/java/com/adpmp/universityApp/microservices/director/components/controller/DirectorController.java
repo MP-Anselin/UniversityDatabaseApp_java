@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/director")
 public class DirectorController {
     protected AssignmentService assignmentService;
 
@@ -34,8 +33,8 @@ public class DirectorController {
 
     @GetMapping("/test")
     public ResponseEntity<String> test(){
-        System.out.println("[DirectorController] test  ");
-        String response = "I PASS IN DIRECTOR CONTROLLER ";
+        System.out.println("[DirectorController] assignment test  ");
+        String response = "I PASS IN DIRECTOR CONTROLLER ASSIGNMENT";
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 

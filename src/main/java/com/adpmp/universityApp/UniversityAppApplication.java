@@ -1,16 +1,13 @@
 package com.adpmp.universityApp;
 
 import com.adpmp.universityApp.microservices.authentication.AuthenticationServer;
-import com.adpmp.universityApp.microservices.director.server.DirectorServer;
+import com.adpmp.universityApp.microservices.director.DirectorServer;
+import com.adpmp.universityApp.microservices.profiles.ProfileServer;
 import com.adpmp.universityApp.microservices.registration.RegistrationServer;
 import com.adpmp.universityApp.microservices.university.UniversityServer;
-import com.adpmp.universityApp.microservices.students.server.StudentsServer;
-import com.adpmp.universityApp.microservices.teachers.server.TeachersServer;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.net.InetAddress;
 
-@SpringBootApplication
 public class UniversityAppApplication {
 
     public static final String NO_VALUE = "NO-VALUE";
@@ -69,13 +66,9 @@ public class UniversityAppApplication {
                 System.out.println("start director");
                 DirectorServer.main(args);
                 break;
-            case "teacher":
-                System.out.println("start teacher");
-                TeachersServer.main(args);
-                break;
-            case "student":
-                StudentsServer.main(args);
-                System.out.println("start student");
+            case "profiles":
+                System.out.println("start profiles");
+                ProfileServer.main(args);
                 break;
             default:
                 System.out.println("Unknown server type: " + serverName);

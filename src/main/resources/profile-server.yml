@@ -1,13 +1,13 @@
 # Spring properties
 spring:
   application:
-    name: teachers-service
+    name: profile-service
   freemarker:
     enabled: false
 
 error.path: /error
 
-server.port: 4444
+server.port: 4446
 
 eureka:
   client:
@@ -15,5 +15,6 @@ eureka:
       defaultZone: http://${registration.server.hostname}:1111/eureka/
   instance:
     leaseRenewalIntervalInSeconds: 10
+
 management.endpoints.web.exposure.include: '*'
 

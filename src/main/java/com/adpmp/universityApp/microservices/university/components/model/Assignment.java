@@ -17,19 +17,19 @@ public class Assignment implements Serializable {
     @Column(name = "SUBJECT", nullable = false)
     private String subject;
 
-    @Column(name = "CREDIT", nullable = false)
-    private Integer credit;
+    @Column(name = "CREDITS", nullable = false)
+    private Integer credits;
 
     @JoinColumn(name = "STUDY_FIELD", nullable = false)
     @OneToOne(fetch = FetchType.LAZY)
     private StudyFields study_filed;
 
-    public Integer getCredit() {
-        return credit;
+    public Integer getCredits() {
+        return credits;
     }
 
-    public void setCredit(Integer credit) {
-        this.credit = credit;
+    public void setCredits(Integer credit) {
+        this.credits = credit;
     }
 
     public StudyFields getStudy_filed() {

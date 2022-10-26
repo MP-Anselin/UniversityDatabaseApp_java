@@ -16,7 +16,7 @@
     <properties>
         <java.version>11</java.version>
         <start-class>com.adpmp.universityApp.UniversityAppApplication</start-class>
-        <tests.skip>true</tests.skip>
+<!--        <tests.skip>true</tests.skip>-->
     </properties>
     <dependencies>
         <dependency>

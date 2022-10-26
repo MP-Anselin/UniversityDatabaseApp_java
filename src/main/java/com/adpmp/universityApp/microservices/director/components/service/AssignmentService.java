@@ -23,12 +23,13 @@ public class AssignmentService {
         Assignment newAssignment = new Assignment();
         newAssignment.setSubject(element.getSubject());
         newAssignment.setCredit(element.getCredit());
-        return assignmentDao.create(newAssignment);
+        newAssignment.setStudy_filed(element.getStudy_filed());
+        return assignmentDao.save(newAssignment);
     }
 
     public void deleteAssignment(Long id) {
         Assignment toDelete = assignmentDao.findById(id)
-                .orElseThrow(() -> new ResourceNotFoundException("Can't find Assignment with id : " + id ));
+                .orElseThrow(() -> new ResourceNotFoundException("Can't find Assignment with id : " + id));
         assignmentDao.delete(toDelete);
     }
 

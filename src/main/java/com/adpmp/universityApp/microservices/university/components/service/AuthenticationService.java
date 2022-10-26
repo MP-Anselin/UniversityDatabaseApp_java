@@ -2,10 +2,7 @@ package com.adpmp.universityApp.microservices.university.components.service;
 
 import com.adpmp.universityApp.microservices.university.components.dto.RegistrationDto;
 import com.adpmp.universityApp.microservices.university.components.model.Authentication;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 
 import java.util.Arrays;
 import java.util.List;
@@ -40,9 +37,9 @@ public class AuthenticationService extends UniversityService{
     }
 
     public String test() {
-        System.out.println("[UniversityService] test");
+        System.out.println("[AuthenticationService] test");
         try {
-            String url = serviceUrl + "/test";
+            String url = serviceUrl + "/auth/test";
             System.out.println("URL = " + url);
             return restTemplate.getForObject(serviceUrl + "/auth/test", String.class);
         } catch (Exception e) {

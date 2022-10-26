@@ -1,10 +1,9 @@
-package com.adpmp.universityApp.microservices.director.components.model;
+package com.adpmp.universityApp.microservices.profiles.components.model;
 
 import javax.persistence.*;
 import java.io.Serializable;
 
-@Entity
-@Table(name = "study_fields")
+@Entity(name = "study_fields")
 public class StudyFields implements Serializable {
     private static final long serialVersionUID = 1L;
 

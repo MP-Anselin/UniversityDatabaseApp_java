@@ -3,8 +3,6 @@ package com.adpmp.universityApp.microservices.director.components.dto;
 import com.adpmp.universityApp.microservices.director.components.model.StudyFields;
 import com.sun.istack.NotNull;
 
-import javax.persistence.*;
-
 public class AssignmentCreateDto {
     @NotNull
     private String subject;

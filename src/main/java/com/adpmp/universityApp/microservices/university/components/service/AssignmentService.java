@@ -1,6 +1,6 @@
 package com.adpmp.universityApp.microservices.university.components.service;
 
-import com.adpmp.universityApp.microservices.director.components.model.Assignment;
+import com.adpmp.universityApp.microservices.university.components.model.Assignment;
 import com.adpmp.universityApp.microservices.university.components.dto.AssignmentCreateDto;
 import org.springframework.stereotype.Service;
 
@@ -18,7 +18,7 @@ public class AssignmentService extends UniversityService{
 
     public Assignment addAssignment(AssignmentCreateDto elements) {
         try {
-            return restTemplate.postForObject(serviceUrl + "/director/add", elements, Assignment.class);
+            return restTemplate.postForObject(serviceUrl + "/assignment/add", elements, Assignment.class);
         } catch (Exception e) {
             System.out.println("ERROR message: " + e.getMessage());
             e.printStackTrace();
@@ -31,7 +31,7 @@ public class AssignmentService extends UniversityService{
         try {
             String url = serviceUrl + "/test";
             System.out.println("URL = " + url);
-            return restTemplate.getForObject(serviceUrl + "/director/test", String.class);
+            return restTemplate.getForObject(serviceUrl + "/test", String.class);
         } catch (Exception e) {
             System.out.println("ERROR message: " + e.getMessage());
             e.printStackTrace();
@@ -41,7 +41,7 @@ public class AssignmentService extends UniversityService{
 
     public void deleteAssignment(Long id) {
         try {
-            restTemplate.postForObject(serviceUrl + "/director/delete/{id}", null, Void.class, id);
+            restTemplate.postForObject(serviceUrl + "/assignment/delete/{id}", null, Void.class, id);
         } catch (Exception e) {
             System.out.println("ERROR message: " + e.getMessage());
             e.printStackTrace();
@@ -52,7 +52,7 @@ public class AssignmentService extends UniversityService{
         Assignment[] assignments = null;
 
         try {
-            assignments = restTemplate.getForObject(serviceUrl + "/director/assignments", Assignment[].class);
+            assignments = restTemplate.getForObject(serviceUrl + "/assignments", Assignment[].class);
         } catch (Exception e) {
             System.out.println("ERROR message: " + e.getMessage());
             e.printStackTrace();

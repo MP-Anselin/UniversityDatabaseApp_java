@@ -15,5 +15,6 @@ eureka:
       defaultZone: http://${registration.server.hostname}:1111/eureka/
   instance:
     leaseRenewalIntervalInSeconds: 10
+
 management.endpoints.web.exposure.include: '*'
 

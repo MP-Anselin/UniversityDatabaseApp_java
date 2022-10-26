@@ -1,10 +1,10 @@
-package com.adpmp.universityApp.microservices.director.components.model;
+package com.adpmp.universityApp.microservices.profiles.components.model;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
-@Entity
-@Table(name = "assignments")
+@Entity(name = "assignments")
 public class Assignment implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
@@ -12,29 +12,35 @@ public class Assignment implements Serializable {
     @Column(name = "id", nullable = false)
     private Long id;
 
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JoinTable(
+            name = "PROFILES_ASSIGNMENTS",
+            joinColumns = @JoinColumn(name = "ASSIGNMENTS_ID"),
+            inverseJoinColumns = @JoinColumn(name = "PROFILE_ID"))
+    private List<Profile> profiles;
+
     @Column(name = "SUBJECT", nullable = false)
     private String subject;
 
     @Column(name = "CREDITS", nullable = false)
     private Integer credits;
 
-    @JoinColumn(name = "STUDY_FIELD", nullable = false)
-    @ManyToOne(fetch = FetchType.EAGER, cascade=CascadeType.ALL)
-    private StudyFields study_filed;
+    @Column(name = "STUDY_FIELD", nullable = false)
+    private Integer study_filed;
 
     public Integer getCredits() {
         return credits;
     }
 
-    public void setCredit(Integer credit) {
-        this.credits = credit;
+    public void setCredits(Integer credits) {
+        this.credits = credits;
     }
 
-    public StudyFields getStudy_filed() {
+    public Integer getStudy_filed() {
         return study_filed;
     }
 
-    public void setStudy_filed(StudyFields study_filed) {
+    public void setStudy_filed(Integer study_filed) {
         this.study_filed = study_filed;
     }
 
