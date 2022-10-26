@@ -18,14 +18,13 @@
     EXPOSE 3333
     EXPOSE 4444
     EXPOSE 5555
-    EXPOSE 6666
     ```
 
    What this does:
 
     * Use the OpenJDK 11 docker image (freely available at Docker hub) as a starting point. This image defines a minimal Linux system with OpenJDK 8 preinstalled.
     * Copy the demo jar into the container and rename it to `app.jar` to save typing later.  By default, `app.jar` will be copied into the root of the container file system.
-    * Expose ports 1111, 2222, 3333, 4444, 5555 and 6666.
+    * Expose ports 1111, 2222, 3333, 4444 and 5555.
 
 1. To build the container (**note** the `.` at the end, indicating to use the current directory as its working directory):
 
@@ -78,28 +77,21 @@ We will run the container three times, each time running the Java application in
     ```
 
    Replace `<eg server ip addr>` with the IP address you determined earlier.
-1. _In a new CMD/Terminal window_, run a third container for the teacher web-service. This is a web-application for viewing director information by requesting teachers data from the teacher and authentication microservice.
+1. _In a new CMD/Terminal window_, run a third container for the profile web-service. This is a web-application for viewing director information by requesting profiles data from the profile and authentication microservice.
 
     ```sh
-    docker run --name teacher --hostname teacher --network university-net -p 4444:4444 university/microservices java -jar app.jar teacher --registration.server.hostname=<eg server ip addr>
+    docker run --name profile --hostname profile --network university-net -p 4444:4444 university/microservices java -jar app.jar profile --registration.server.hostname=<eg server ip addr>
     ```
 
    Replace `<eg server ip addr>` with the IP address you determined earlier.
-1. _In a new CMD/Terminal window_, run a fourth container for the student web-service. This is a web-application for viewing students information by requesting students data from the student and authentication microservice.
+1. _In a new CMD/Terminal window_, run a fifth container for the university web-service. This is a web-application to make the request of the university api client.
 
     ```sh
-    docker run --name student --hostname student --network university-net -p 5555:5555 university/microservices java -jar app.jar student --registration.server.hostname=<eg server ip addr>
-    ```
-
-   Replace `<eg server ip addr>` with the IP address you determined earlier.
-1. _In a new CMD/Terminal window_, run a fifth container for the university web-service. This is a web-application for viewing accounts teacher and student information by requesting account data from the accounts teacher and student  microservice.
-
-    ```sh
-    docker run --name web --hostname web --network university-net -p 6666:6666 university/microservices java -jar app.jar web --registration.server.hostname=<eg server ip addr>
+    docker run --name web --hostname web --network university-net -p 5555:5555 university/microservices java -jar app.jar web --registration.server.hostname=<eg server ip addr>
     ```
 
    Replace `<eg server ip addr>` with the IP address you determined earlier.
 
-1. Return to the Eureka Dashboard in your browser and refresh the screen.  You should see that `DIRECTOR-SERVICE`, `TEACHER-SERVICE`, `STUDENTS-SERVICE` and `UNIVERSITY-SERVICE` are now registered.
+1. Return to the Eureka Dashboard in your browser and refresh the screen.  You should see that `DIRECTOR-SERVICE`, `AUTHENTICATION-SERVICE`, `PROFILE-SERVICE` and `UNIVERSITY-SERVICE` are now registered.
 
-1. In a second browser tab, go to http://localhost:6666.  This is the web interface you just deployed and you should be able to view, list and search for account information.
+1. In a second browser tab, go to http://localhost:5555. to request the university_api.

@@ -7,7 +7,7 @@ spring:
 
 error.path: /error
 
-server.port: 4446
+server.port: 4444
 
 eureka:
   client:

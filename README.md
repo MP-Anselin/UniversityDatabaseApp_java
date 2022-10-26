@@ -31,8 +31,7 @@ To run the microservices system from the command-line, open three CMD windows (W
  1. In the same window run: `java -jar target/universityApp-0.0.1-SNAPSHOT.jar registration`
  1. Switch to the second window and run: `java -jar target/universityApp-0.0.1-SNAPSHOT.jar authentification`
  1. Switch to the third window and run: `java -jar target/universityApp-0.0.1-SNAPSHOT.jar director`
- 1. Switch to the fourth window and run: `java -jar target/universityApp-0.0.1-SNAPSHOT.jar teacher`
- 1. Switch to the fifth window and run: `java -jar target/universityApp-0.0.1-SNAPSHOT.jar student`
+ 1. Switch to the fourth window and run: `java -jar target/universityApp-0.0.1-SNAPSHOT.jar profiles`
  1. Switch to the sixth window and run: `java -jar target/universityApp-0.0.1-SNAPSHOT.jar university`
  1. In your favorite browser open the same two links: [http://localhost:1111](http://localhost:1111) and you can do your request with the url [http://localhost:6666](http://localhost:6666)
 
