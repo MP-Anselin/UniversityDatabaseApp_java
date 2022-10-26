@@ -39,10 +39,10 @@ public class ProfileConfiguration {
 		dataSource.setPassword(env.getProperty("spring.datasource.password"));
 
 		// schema init
-		Resource initSchema = new ClassPathResource(Objects.requireNonNull(env.getProperty("spring.datasource.path.schema-h2")));
+/*		Resource initSchema = new ClassPathResource(Objects.requireNonNull(env.getProperty("spring.datasource.path.schema-h2")));
 		Resource initData = new ClassPathResource(Objects.requireNonNull(env.getProperty("spring.datasource.path.data-h2")));
 		DatabasePopulator databasePopulator = new ResourceDatabasePopulator(initSchema, initData);
-		DatabasePopulatorUtils.execute(databasePopulator, dataSource);
+		DatabasePopulatorUtils.execute(databasePopulator, dataSource);*/
 		return dataSource;
 	}
 }
