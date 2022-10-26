@@ -1,0 +1,330 @@
+{
+	"info": {
+		"_postman_id": "f026f579-28a5-4362-a3da-8a72d389b1c8",
+		"name": "University",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19161043"
+	},
+	"item": [
+		{
+			"name": "accounts",
+			"item": [
+				{
+					"name": "test",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/university/auth/test",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"university",
+								"auth",
+								"test"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get  all accounts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/university/accounts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"university",
+								"accounts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"dnie\":   \"MPadp666-C\",\n    \"firstName\": \"MP\",\n    \"lastName\": \"MP\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5555/university/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"university",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "log out",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/university/logout/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"university",
+								"logout",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"dnie\":   \"MPadp666-A\",\n    \"firstName\": \"MP2\",\n    \"lastName\": \"MP2\",\n    \"userRoleId\": 2 \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5555/university/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"university",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "assignment",
+			"item": [
+				{
+					"name": "add assignment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"subject\":   \"MP-A\",\n    \"credit\": 666,\n    \"study_filed\": {\n        \"study_type\": \"test\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5555/university/assignment/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"university",
+								"assignment",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete assignment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/university/logout/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"university",
+								"logout",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get  all assignment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/university/assignments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"university",
+								"assignments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "test assignment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/university/assignment/test",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"university",
+								"assignment",
+								"test"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "profiles",
+			"item": [
+				{
+					"name": "test profiles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/university/profiles/test",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"university",
+								"profiles",
+								"test"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add profile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"account\": {\n        \"dnie\":   \"MPadp666-A\",\n        \"firstName\": \"MP2\",\n        \"lastName\": \"MP2\",\n        \"userRoleId\": 2\n    },\n    \"assignment\":   {\n        \"subject\": \"mathematics\",\n        \"credits\": 5\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5555/university/profile/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"university",
+								"profile",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get  all profiles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/university/profiles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"university",
+								"profiles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all invalid student",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/university/profiles/student/tocheck",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"university",
+								"profiles",
+								"student",
+								"tocheck"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
