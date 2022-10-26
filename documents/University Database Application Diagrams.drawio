@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-10-26T14:45:54.576Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="t-J5pbNtnnb1n3u9s7WE" version="20.5.1" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2022-10-26T14:47:17.167Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="ahnieX1qHeKI8mq8gYRb" version="20.5.1" type="github" pages="5">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="Micro services connection">
     <mxGraphModel dx="1422" dy="1935" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -77,6 +77,9 @@
             <mxGeometry x="260" y="140" width="180" height="70" as="geometry" />
           </mxCell>
         </UserObject>
+        <mxCell id="gpCZ0KJSFsDUlAHGbTXS-3" value="EUREKA SERVERS&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="580" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
