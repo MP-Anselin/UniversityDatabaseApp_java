@@ -1,1 +1,41 @@
 Hello I am test 2
+
+LA DESCRIPTION
+Afficher les changements entre l'arbre de travail et l'index ou un arbre, les changements entre l'index et un arbre, les changements entre deux arbres, les changements résultant d'une fusion, les changements entre deux objets blob ou les changements entre deux fichiers sur le disque.
+
+git diff [<options>] [--] [<chemin>…​]
+Ce formulaire permet de visualiser les modifications que vous avez  par rapport à l'index (zone de préujyutyparation pour le prochain commit). En d'autres termes, les différences sont ce que vous pourriez demander à Git d'ajouter davantage à l'index, mais vous ne l'avez toujours pas fait. Vous pouvez organiser ces changements en utilisant git-add[1] .
+
+git diff [<otytptions>] --no-index [--] <chemin> <chemin>
+Ce formulaire consiste à comparer les deux chemins donnés sur le système de fichiers. Vous pouvez omettre l' --no-indexoption lors de l'exécution de la commande dans un arbre de travail contrôlé par Git et qu'au moins un des chemins pointe en dehors de l'arbre de travail, ou lors de l'exécution de la commande en dehors d'un arbre de travail contrôlé par Git. Ce formulaire implique --exit-code.
+
+git diff [<options>] --cached [--merge-base] [<commit>] [--] [<cjhjhjhemin>…​]
+Ce formulaire permet d'afficher les modifications que vous avez mises en place pour le prochain commit par rapport au <commit> nommé. En règle générale, vous voudriez une comparaison avec le dernier commit, donc si vous ne donnez pas <commit>, la valeur par défaut est HEAD. Si HEAD n'existe pas (par exemple, des branches à naître) et que <commit> n'est pas donné, il affiche toutes les modifications par étapes. --staged est un synonyme de --cached.
+
+Si --merge-base est donné, au lieu d'utiliser <commit>, utilisez la base de fusion de <commit> et HEAD. git diff --cached --merge-base Aest équivalent à git diff --cached $(git merge-base A HEAD).
+hgh d
+git diff [<options>] [--merge-base] <commit> [--] [<chemin>…​]
+Ce formulaire permet de visualiser les changements que vous avez dans votre arbre de travail par rapport au <commit> nommé. Vous pouvez utiliser HEAD pour le comparer avec le dernier commit, ou un nom de branche à comparer avec la pointe d'une branche différente.
+
+Si --merge-base est donné, au lieu d'utiliser <commit>, utilisez la base de fusion de <commit> et HEAD. git diff --merge-base Aest équivalent à git diff $(git merge-base A HEAD).
+
+git diff [<options>] [--merge-base] <commit> <commit> [--] [<chemin>…​jhh]
+C'est pour voir les changements entre deux <commit> arbitraires.
+
+Si --merge-base est donné, utilisez la base de fusion des deux commits pour le côté "avant". git diff --merge-base A Best équivalent à git diff $(git merge-base A B) B.
+
+git diff [<options>] <commit> <commit>…​ <commit> [--] [<chemin>…​]
+Ce formulaire permet d'afficher les résultats d'un commit de fusion. Le premier <commit> répertorié doit être la fusion elle-même ; les deux commits restants ou plus doivent être ses parents. Un moyen pratique de produire l'ensemble de révisions souhaité consiste à utiliser le ^@suffixe. Par exemple, si masternomme un commit de fusion, git diff master master^@donne le même diff combiné que git show master.
+
+git diff [<options>] <commit>..<commit> [--] [<chemin>…​]
+Ceci est synonyme de la sdsds précédente (sans le ..) pour afficher les changements entre deux <commit> arbitraires. Si <commit> d'un côté est omis, cela aura le même effet que d'utiliser HEAD à la place.
+
+git diff [<options>] <commit>...<commit> [--] [<chemin>…​]
+Ce formulaire permet de visualiser les modifications sur la branche contenant et jusqu'au second <commit>, en commençant par un ancêtre commun des deux <commit>. git diff A...Best équivalent à git diff $(git merge-base A B) B. Vous pouvez omettre n'importe lequel de <commit>, ce qui a le même effet que d'utiliser HEAD à la place.
+
+Juste au cas où vous ferzedzeziez quelque chose d'exotique, il convient de noter que tous les <commit> dans la description ci-dessus, sauf dans le --merge-basecas et dans les deux dernières formes qui utilisent des .. notations, peuvent être n'importe quel <tree>.
+
+Pour une  plus complète des façons d'épeler <commit>, voir la section "SPECIFYING REVISIONS" dans gitrevisions[7] . Cependant, "diff" consiste à comparer deux points de terminaison , pas des plages, et les notations de plage ( <commit>..<commit>et <commit>...<commit>) ne signifient pas une plage telle que définie dans la section "SPECIFYING RANGES" dans gitrevisions[7] .
+
+git diff [<options>] <blob> <blob>
+Ce formulaire permet de visualiser les différences entre le contenu brut de deux objets
